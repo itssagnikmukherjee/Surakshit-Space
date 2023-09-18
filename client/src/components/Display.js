@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./Display.css";
+import pinataConfig from "../pinataConfig"
+
 const Display = ({ contract, account }) => {
   const [data, setData] = useState("");
   const getdata = async () => {
@@ -27,7 +29,8 @@ const Display = ({ contract, account }) => {
           <a href={item} key={i} target="_blank">
             <img
               key={i}
-              src={`https://gateway.pinata.cloud/ipfs/${item.substring(6)}`}
+              src={`ivory-gradual-caterpillar-896.mypinata.cloud
+              /ipfs/${item.substring(6)}`}
               alt="new"
               className="image-list"
             ></img>
